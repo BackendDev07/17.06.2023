@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Васелиса - домашний текстиль </title>
+    <link rel="icon" href="./images/logo.svg">
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+  
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__row">
+            <div class="header__logo">
+              <img src="./images/logo.svg" alt="site logo" />
+            </div>
+
+            <navbar class="header-navbar">
+              <div class="header-navbar__item">
+                <button class="header-navbar__button">СПАЛЬНЯ</button>
+                <div class="header-navbar__menu">
+                  <div class="container">
+                    <h1>Спальня</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="header-navbar__item">
+                <button class="header-navbar__button">КУХНЯ</button>
+                <div class="header-navbar__menu">
+                  <div class="container">
+                    <h1>КУХНЯ</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="header-navbar__item">
+                <button class="header-navbar__button">ВАННАЯ</button>
+                <div class="header-navbar__menu">
+                  <div class="container">
+                    <h1>ВАННАЯ</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="header-navbar__item">
+                <button class="header-navbar__button">ГОСТИНАЯ</button>
+                <div class="header-navbar__menu">
+                  <div class="container">
+                    <h1>ГОСТИНАЯ</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="header-navbar__item">
+                <button class="header-navbar__button">ДЕТСКАЯ</button>
+                <div class="header-navbar__menu">
+                  <div class="container">
+                    <h1>ДЕТСКАЯ</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="header-navbar__item">
+                <button class="header-navbar__button">АКСЕССУАРЫ</button>
+                <div class="header-navbar__menu">
+                  <div class="container">
+                    <h1>АКСЕССУАРЫ</h1>
+                  </div>
+                </div>
+              </div>
+            </navbar>
+
+            <div class="header-buttons">
+              <button class="header__search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="header__saved">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="header__burger">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header__menu">
+          <a href="#" class="header__menu-link">Каталог</a>
+        </div>
+      </header>
+
+
+      <main class="main">
+        <div class="main__top">
+          <div class="container">
+            <div class="main__img">
+                <div class="main__start">
+                  <span class="main__name">ГОСТИНАЯ</span>
+                  <h1 class="main__text">Конструктор стильного дома</h1>
+                </div>
+                  <ul class="main__end">
+                    <li class="main__link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path></svg>
+                      <a href="">Детская</a>
+                    </li>
+                    <li class="main__link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>
+                      <a href="">Кухня</a>
+                    </li>
+                    <li class="main__link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m18.707 12.707-1.414-1.414L13 15.586V6h-2v9.586l-4.293-4.293-1.414 1.414L12 19.414z"></path></svg>
+                      <a href="">Ванная</a>
+                    </li>
+                    <li class="main__link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                      <a href="">Спальня</a>
+                    </li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+      <!-- app -->
+
+      <div class="app">
+        <div class="app__top">
+          <div class="container">
+            <h1 class="app__name">Новости компании</h1>
+            <div class="app__boxes">
+                <img src="https://vasylisa.ru/uploads/oG/Oe/Ue/V_/HmQwIm9d.jpeg" alt="img one">
+                <img src="https://vasylisa.ru/uploads/3G/eg/D5/QK/6zSilmZN.jpeg" alt="img two">
+                <img src="https://vasylisa.ru/uploads/hz/gx/MD/ff/lU_bNGpg.jpeg" alt="img three">
+                <img src="https://vasylisa.ru/uploads/dU/0c/Eb/u6/uLjdez7w.jpeg" alt="img five">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- app -->
+
+      <!-- middle -->
+
+      <div class="middle">
+        <div class="middle__top">
+          <div class="container">
+            <div class="middle__name"> <h1>Каталог товаров</h1> <div class="middle__min">
+              <span>Большой ассортимент</span>
+              <span>собственного производства</span>
+            </div> </div>
+            <div class="middle__boxes">
+                  <div class="middle__box" style="background-image: url(https://vasylisa.ru/themes/vasilisa/img/category/kyxny.jpg);">
+                      <h1>Кухня</h1>
+                    <div class="middle__con">
+                      <span>Плейсметы</span>
+                    <span>Скатерти</span>
+                    <span>Кухонные Полотенца</span>
+                    <span>Салфетки</span>
+                    <span>Дорожки</span>
+                    <span>Фартуки</span>
+                    <span>Прихватки/рукавицы</span>
+                    <span>Кухонные комплекты</span>
+                    </div>
+                  </div>
+                  <div class="middle__box" style="background-image: url(https://vasylisa.ru/themes/vasilisa/img/category/spaliny.jpg);">
+                      <h1>Спальня</h1>
+                    <div class="middle__con">
+                      <span>Постельное белье</span>
+                    <span>Покрывала</span>
+                    <span>Одеяла</span>
+                    <span>Подушки</span>
+                    <span>Топперы</span>
+                    </div>
+                  </div>
+                  <div class="middle__box" style="background-image: url(https://vasylisa.ru/themes/vasilisa/img/category/gostinaya.jpg);">
+                      <h1>Гостиная</h1>
+                    <div class="middle__con">
+                      <span>Пледы</span>
+                    <span>Декоративные подушки</span>
+                    <span>Шторы</span>
+                    <span>Покрывала</span>
+                    </div>
+                  </div>
+                <!--  -->
+                  <div class="middle__box" style="background-image: url(https://vasylisa.ru/themes/vasilisa/img/category/vannay.jpg);">
+                      <h1>Ванная</h1>
+                    <div class="middle__con">
+                      <span>Халаты</span>
+                    <span>Полотенца</span>
+                    <span>Комплекты для сауны</span>
+                    </div>
+          </div>
+                  <div class="middle__box" style="background-image: url(https://vasylisa.ru/themes/vasilisa/img/category/detskaya.jpg);">
+                      <h1>Детская</h1>
+                    <div class="middle__con">
+                      <span>Постельное белье</span>
+                    <span>Пледы</span>
+                    </div>
+              </div>
+                  <div class="middle__box" style="background-image: url(https://vasylisa.ru/themes/vasilisa/img/category/aksessuari.jpg);">
+                      <h1>Аксессуары</h1>
+                    <div class="middle__con">
+                      <span>Сумки</span>
+                    <span>Палантины/Шарфы</span>
+                    </div>
+                  </div>
+        </div>
+      </div>
+      
+      <!-- middle -->
+
+      <!-- Slider  -->
+
+      <footer>
+        <div class="footer__top">
+          <div class="container">
+            <div class="foot__nav">
+              <div class="foot__start">
+                <h1>О бренде «Василиса»</h1>
+                <h1>Бренд «Василиса» - один из лидеров рынка домашнего текстиля в России.</h1>
+                <p>Бренд Василиса вдохновляет покупателей разнообразными идеями, как можно без лишних усилий преображать пространство вокруг себя, создавая настроение, чувство комфорта и желание обновлять интерьер снова и снова.</p>
+                <p>Широкая линейка ассортимента домашнего текстиля позволяет удобно сочетать и комбинировать товары как друг с другом, так и с другими предметами интерьера.</p>
+              <h1>Наши партнёры</h1>
+              <div class="foot__img">
+                <img src="https://vasylisa.ru/themes/vasilisa/img/partners/aushan.svg" alt="">
+                <img src="https://vasylisa.ru/themes/vasilisa/img/partners/metro.svg" alt="">
+                <img src="https://vasylisa.ru/themes/vasilisa/img/partners/lenta.svg" alt="">
+                <img src="https://vasylisa.ru/themes/vasilisa/img/partners/hoff.svg" alt="">
+                <img src="https://vasylisa.ru/themes/vasilisa/img/partners/nastart.png" alt="">
+                <img src="https://vasylisa.ru/themes/vasilisa/img/partners/magnit.svg" alt="">
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Slider  -->
+
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
